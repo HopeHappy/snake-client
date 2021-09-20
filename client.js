@@ -11,6 +11,11 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
     conn.write('Name: Hui');
+
+    setTimeout(() => {
+      conn.write('Move: up');
+    }, 500);
+  
   });
 
   // Listen to data event and receive a message when being kicked out for idling
