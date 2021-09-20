@@ -8,6 +8,11 @@ const connect = function () {
     port: 50541,
   });
 
+  conn.on('connect', () => {
+    console.log('Successfully connected to game server');
+    conn.write('Name: Hui');
+  });
+
   // Listen to data event and receive a message when being kicked out for idling
   conn.on('data', (data) => {
     console.log('Server says:', data);
