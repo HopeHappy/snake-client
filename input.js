@@ -28,6 +28,16 @@ const setupInput = function(conn) {
         connection.write('Move: right');
       }
 
+      if (key === '1') {
+        connection.write('Say: Hi');
+      }
+      if (key === '2') {
+        connection.write('Say: I cannot stop eating');
+      }
+      if (key === '3') {
+        connection.write('Say: Bye');
+      }
+
     });
 
   };
