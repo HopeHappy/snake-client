@@ -1,16 +1,15 @@
+const { host, port, name } = require('./constants');
+
 // TCP connection
 const net = require("net");
 
 // establishes a connection with the game server
 const connect = function () {
-  const conn = net.createConnection({
-    host: 'localhost',
-    port: 50541,
-  });
+  const conn = net.createConnection({ host, port });
 
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
-    conn.write('Name: Hui');
+    conn.write(`Name: ${name}`);
   });
 
   // Listen to data event and receive a message when being kicked out for idling
