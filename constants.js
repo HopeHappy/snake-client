@@ -1,6 +1,6 @@
 const host = 'localhost';
 const port = 50541;
-const name = process.argv[2];
+const name = process.argv[2] ? process.argv[2] : 'UNK';
 const movement = {
   w: 'up',
   a: 'left',

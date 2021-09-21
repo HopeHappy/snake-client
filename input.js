@@ -1,6 +1,6 @@
 const { movement, messages } = require('./constants');
 
-let connection; 
+let connection;
 
 const setupInput = function(conn) {
   connection = conn;
@@ -16,9 +16,9 @@ const setupInput = function(conn) {
       if (key === '\u0003') {
         process.exit();
       }
-
+      // Move commands
       connection.write(`Move: ${movement[key]}`);
-
+      // Send canned messages to the server
       if (messages[key]) {
         const message = `Say: ${messages[key]}`;
         connection.write(message);
