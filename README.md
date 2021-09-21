@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["screenshot of game board"](https://github.com/HopeHappy/snake-client/blob/master/docs/game-board.png?raw=true)
+!["screenshot of the movement and message"](https://github.com/HopeHappy/snake-client/blob/master/docs/move-message.png?raw=true)
 
 
 ## Getting Started
